@@ -1,0 +1,125 @@
+@import "../../style/variables.scss";
+
+.game {
+  position: relative;
+
+  &__title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background: $white;
+    padding: 2rem;
+
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+
+    p {
+      padding-left: 20px;
+      white-space: nowrap;
+      font-size: 20px;
+    }
+  }
+  &__progress {
+    height: 10px;
+    border-radius: 30px;
+    background-color: rgb(232, 232, 232);
+    margin-bottom: 1rem;
+
+    &__inner {
+      height: 100%;
+      border-radius: 30px;
+
+      transition: all 0.3s ease-in-out;
+
+      &__red {
+        background-color: $red;
+      }
+      &__orange {
+        background-color: $orange;
+      }
+      &__green {
+        background-color: $green;
+      }
+    }
+  }
+  &__list {
+    padding: 0;
+    margin: 0px;
+    &__item {
+      padding: 2rem;
+      background: $bodyBg;
+      list-style-type: none;
+
+      border-radius: 10px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px;
+
+      cursor: pointer;
+
+      transition: all 0.3s;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -ms-transition: all 0.3s;
+      -o-transition: all 0.3s;
+
+      &:not(:last-of-type) {
+        margin-bottom: 1rem;
+      }
+      &:hover {
+        background: $bodyBgHover;
+        transition: all 0.3s;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -ms-transition: all 0.3s;
+        -o-transition: all 0.3s;
+      }
+
+      &__correct {
+        color: $green;
+        pointer-events: none;
+      }
+
+      &__incorrect {
+        color: $red;
+        pointer-events: none;
+      }
+    }
+  }
+  &__button {
+    margin-top: 3rem;
+    padding: 1rem 2rem;
+
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+
+    cursor: pointer;
+    display: inline-block;
+    outline: none;
+    border: none;
+    background-color: $bodyBg;
+
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    &:hover {
+      background-color: $bodyBgHover;
+
+      transition: all 0.3s;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -ms-transition: all 0.3s;
+      -o-transition: all 0.3s;
+    }
+  }
+}

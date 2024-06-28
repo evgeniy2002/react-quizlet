@@ -1,0 +1,21 @@
+@import "../style/variables.scss";
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.wrapper {
+  height: 100vh;
+  width: 100%;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  height: 100%;
+}
+
+.content {
+  padding: 3rem 0;
+}
